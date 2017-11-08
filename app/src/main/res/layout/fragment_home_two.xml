@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="我的打卡日历"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="#7EAEDC"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/main_two_date"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.example.yuanren123.jinchuan.view.signview.SignView
+        android:id="@+id/main_two_cv"
+        android:layout_width="match_parent"
+        android:layout_height="800px" />
+
+</LinearLayout>

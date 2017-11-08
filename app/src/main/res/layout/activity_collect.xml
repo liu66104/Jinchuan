@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_collect_miss_four"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#DBD4CC">
+
+        <ImageView
+            android:id="@+id/recite_iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/back"/>
+        <TextView
+            android:text="单词收藏"
+            android:id="@+id/recite_tv_tone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_collect_title1"
+            android:text="单词总数 ："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_frag_three_collectNum"
+            android:layout_toRightOf="@+id/tv_collect_title1"
+            android:text="-1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"/>
+       <!--<TextView-->
+           <!--android:textColor="#ffffff"-->
+           <!--android:layout_marginRight="50dp"-->
+           <!--android:layout_centerVertical="true"-->
+           <!--android:layout_alignParentRight="true"-->
+           <!--android:text="学习"-->
+           <!--android:background="@drawable/shap_blue"-->
+           <!--android:layout_width="wrap_content"-->
+           <!--android:layout_height="wrap_content"/>-->
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_frag_three"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_collect_miss_four"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#DBD4CC">
+
+        <ImageView
+            android:id="@+id/card_iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:text="卡片学习"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <com.example.yuanren123.jinchuan.view.xlistview.XListView
+        android:id="@+id/xlv_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.example.yuanren123.jinchuan.view.xlistview.XListView>
+</LinearLayout>

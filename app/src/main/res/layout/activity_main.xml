@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:background="#ffffff"
+        android:id="@+id/rl_show_ad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@mipmap/main_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/replace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <View
+            android:background="#BFBFBF"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <com.example.yuanren123.jinchuan.view.MyRadioGroup
+            android:layout_marginTop="5dp"
+            android:id="@+id/main_rg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <RadioButton
+                android:drawableTop="@drawable/selector_home"
+                android:id="@+id/rbt_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="@drawable/color_radiobutton"
+                />
+
+            <RadioButton
+                android:drawableTop="@drawable/selector_review"
+                android:checked="false"
+                android:id="@+id/rbt_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="复习"
+                android:textColor="@drawable/color_radiobutton"
+                />
+
+            <RadioButton
+                android:drawableTop="@drawable/selector_me"
+                android:id="@+id/rbt_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@drawable/color_radiobutton"
+                />
+
+        </com.example.yuanren123.jinchuan.view.MyRadioGroup>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+

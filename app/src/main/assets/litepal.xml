@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="Words"></dbname>
+    <version value = "2"></version>
+    <list>
+        <mapping class="com.example.yuanren123.jinchuan.model.PhraseBean"></mapping>
+        <mapping class="com.example.yuanren123.jinchuan.model.ReviewBean"></mapping>
+        <mapping class="com.example.yuanren123.jinchuan.model.CollectBean"/>
+        <mapping class="com.example.yuanren123.jinchuan.model.DateBean"></mapping>
+    </list>
+</litepal>
